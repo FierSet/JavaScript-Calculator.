@@ -1,0 +1,92 @@
+.constainer
+{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.grid
+{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "display display display display"
+  "clear clear divide multiply"
+  "seven eight nine subtract"
+  "four five six add"
+  "one two three equal"
+  "zero zero decimal equal"
+  "author author author author";
+}
+
+.padbtn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 20px;
+}
+.padbtn:hover
+{
+  border: 1px solid white;
+  color: gray;
+}
+#display
+{
+  grid-area: display;
+  background-color: black;
+  text-align: right;
+  font-size: 20px;
+}
+
+#display input
+{
+  padding: 5px 20px;
+  width: 100%;
+  color: white;
+  text-align: right;
+  background-color: black;
+}
+
+.total
+{
+  padding: 5px 20px;
+  color: yellow;
+}
+#clear
+{
+  grid-area: clear;
+}
+
+#zero
+{
+  grid-area: zero;
+}
+
+#author
+{
+  text-align: center;
+  font-family: Share Tech Mono, sans;
+  margin-top: 15px;
+  grid-area: author;
+}
+
+.card
+{
+  background-color: #FFFFFF80;
+}
+
+h3
+{
+  text-align: center;
+}
+
+#equal
+{
+  grid-area: equal;
+}
